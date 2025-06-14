@@ -25,19 +25,19 @@ void main() {
   //   // );
 
   //   // Step 2: stateless widget
-  //   runApp(
-  //     MaterialApp(
-  //       title: "My Title",
-  //       home: Scaffold(
-  //         appBar: AppBar(
-  //           title: const Text("My App"),
-  //           backgroundColor: Colors.pinkAccent,
-  //           centerTitle: true,
-  //         ),
-  //         body: const Home(),
-  //       ),
-  //     ),
-  //   );
+  runApp(
+    MaterialApp(
+      title: "My Title",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("My App"),
+          backgroundColor: Colors.pinkAccent,
+          centerTitle: true,
+        ),
+        body: const Home(),
+      ),
+    ),
+  );
   // }
 
   // Step 2: stateless widget

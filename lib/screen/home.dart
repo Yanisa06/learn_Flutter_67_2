@@ -1,109 +1,22 @@
 //  Step 4: stateless widget
 import 'package:flutter/material.dart';
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
-  // Step 5: container, color, main axis, cross axis
-  @override 
+  @override
   Widget build(BuildContext context) {
-//     return Column(
-//       // mainAxisAlignment: MainAxisAlignment.start,
-//       // mainAxisAlignment: MainAxisAlignment.center,
-//       // mainAxisAlignment: MainAxisAlignment.end,
-//       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//       // mainAxisAlignment: MainAxisAlignment.spaceAround,
-//       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//       crossAxisAlignment: CrossAxisAlignment.stretch,
-
-//       children: [
-//         Container(
-//           color: Colors.orangeAccent,
-//           padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-//           child: Text(
-//             "Hello Flutter",
-//             style: TextStyle(
-//               fontSize: 20,
-//               letterSpacing: 3,
-//               color: Colors.white,
-//             ),
-//           ),
-//         ),
-//         Container(
-//           color: Colors.orangeAccent,
-//           padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-//           child: Text(
-//             "Hello Flutter",
-//             style: TextStyle(
-//               fontSize: 20,
-//               letterSpacing: 3,
-//               color: Colors.white,
-//             ),
-//           ),
-//         ),
-//         Container(
-//           color: Colors.orangeAccent,
-//           padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-//           child: Text(
-//             "Hello Flutter",
-//             style: TextStyle(
-//               fontSize: 20,
-//               letterSpacing: 3,
-//               color: Colors.white,
-//             ),
-//           ),
-//         ),
-//       ],
-//     );
-//   }
-// }
-
-    
- return Row(
-      // mainAxisAlignment: MainAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.end,
-      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-
+    // Step 6: images widgets
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      // crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.orangeAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.orangeAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello Flutter",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.orangeAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello Flutter",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-          ),
+        Image.asset("images/mint9999.jpg", width: 150, height: 150),
+        const SizedBox(height: 10),
+        Image.network(
+          "https://picsum.photos/250?image=9",
+          width: 150,
+          height: 150,
         ),
       ],
     );
